@@ -37,7 +37,7 @@ namespace UnityModManagerNet
             {
                 foreach (var url in urls)
                 {
-                    if (unityVersion < new Version(5, 4))
+                    if (unityVersion < new System.Version(5, 4))
                     {
                         UI.Instance.StartCoroutine(DownloadString_5_3(url, ParseRepository));
                     }

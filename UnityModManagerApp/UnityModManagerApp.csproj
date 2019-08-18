@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>UnityModManagerNet.Installer</RootNamespace>
     <AssemblyName>UnityModManagerApp</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -114,16 +114,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UnityModManager\UnityModManager.csproj">
-      <Project>{a1fcae3e-523e-4e33-8860-dd39dddf0f62}</Project>
-      <Name>UnityModManager</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="images\dragdropfiles.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnityModManager\UnityModManager.csproj">
+      <Project>{a1fcae3e-523e-4e33-8860-dd39dddf0f62}</Project>
+      <Name>UnityModManager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
